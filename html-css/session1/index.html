@@ -18,60 +18,97 @@ Default inline elements:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayalvizhi | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<!--
+Semantic HTML tags make the page more meaningful.
+They improve accessibility, SEO, readability, and help developers
+understand the structure of the webpage without changing its appearance.
+-->
 <body>
 
+
+   <header>
     <h1>Kayalvizhi K</h1>
+    <!--
+href="#about" links to the element with id="about".
+The browser searches for the matching id and automatically scrolls to that section.
+-->
 
-<h2>About Me</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<p id="about-paragraph">
-    I am a Computer Science and Engineering student passionate about web development and software engineering. I enjoy learning new technologies and building practical projects to improve my skills.
-</p>
+    <main>
 
-<h2>Skills</h2>
+        <section id="about">
+            <h2>About Me</h2>
 
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>TypeScript</li>
-</ul>
+            <p class="intro-text" id="about-paragraph">
+                I am a Computer Science and Engineering student passionate about web development and software engineering. I enjoy learning new technologies and building practical projects to improve my skills.
+            </p>
+        </section>
 
-<h2>Experience</h2>
+        <section id="skills">
+            <h2>Skills</h2>
 
-<ol>
-    <li>Learned Git and GitHub for version control.</li>
-    <li>Worked with JavaScript and TypeScript basics.</li>
-    <li>Practiced creating projects during internship training.</li>
-</ol>
+            <ul>
+                <li class="highlight">HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+            </ul>
+        </section>
 
-<h2 id="contact-section">Contact</h2>
+        <section id="experience">
+            <h2>Experience</h2>
 
-<a href="https://github.com/kkayalvizhi139-a11y" target="_blank">
-    Visit my GitHub
-</a>
+            <ol>
+                <li>Learned Git and GitHub for version control.</li>
+                <li>Worked with JavaScript and TypeScript basics.</li>
+                <li>Practiced creating projects during internship training.</li>
+            </ol>
+        </section>
 
-<br><br>
+        <section id="contact">
+            <h2 id="contact-section">Contact</h2>
 
-<h2>Block vs Inline Demo</h2>
+            <a href="https://github.com/kkayalvizhi139-a11y" target="_blank">
+                Visit my GitHub
+            </a>
 
-<!-- Block elements -->
-<p>This is a paragraph — block element</p>
-<p>This is another paragraph — notice it starts on a new line</p>
+            <br><br>
 
-<!-- Inline elements -->
-<p>
-    This sentence has
-    <strong>bold text</strong>,
-    <em>italic text</em>, and a
-    <a href="#">link</a>
-    all flowing inline within the paragraph.
-</p>
+            <img
+                src="https://placehold.co/300x200"
+                alt="Placeholder image representing my portfolio profile">
+        </section>
 
-<img
-    src="https://placehold.co/300x200"
-    alt="Placeholder image representing my portfolio profile">
+        <section>
+            <h2>Block vs Inline Demo</h2>
+
+            <p>This is a paragraph — block element</p>
+
+            <p>This is another paragraph — notice it starts on a new line</p>
+
+            <p>
+                This sentence has
+                <strong>bold text</strong>,
+                <em>italic text</em>, and a
+                <a href="#">link</a>
+                all flowing inline within the paragraph.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Kayalvizhi K. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
