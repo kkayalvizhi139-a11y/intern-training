@@ -1,0 +1,35 @@
+.box-px {
+    width: 300px;
+    background: #f0f4ff;
+}
+
+.box-percent {
+    width: 50%;
+    background: #fff0f4;
+}
+
+.box-rem {
+    width: 20rem;
+    background: #f0fff4;
+}
+
+.box-vw {
+    width: 60vw;
+    background: #fffbf0;
+}
+
+/* Common styles for all boxes */
+.box-px,
+.box-percent,
+.box-rem,
+.box-vw {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+
+/*
+px is best for fixed-size elements where an exact size is required.
+rem is better for scalable layouts because it follows the root font size.
+% is useful when an element should resize relative to its parent container.
+*/
