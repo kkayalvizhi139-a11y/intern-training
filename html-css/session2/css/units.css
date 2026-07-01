@@ -33,3 +33,32 @@ px is best for fixed-size elements where an exact size is required.
 rem is better for scalable layouts because it follows the root font size.
 % is useful when an element should resize relative to its parent container.
 */
+/* Root font size */
+html {
+    font-size: 20px;
+}
+
+/* Parent element */
+.font-demo {
+    font-size: 12px;
+}
+
+/* Fixed font size */
+.px-text {
+    font-size: 16px;
+}
+
+/* Relative to root element */
+.rem-text {
+    font-size: 1rem;
+}
+
+/* Relative to parent element */
+.em-text {
+    font-size: 1.5em;
+}
+
+/*
+rem is relative to the root (html) font size.
+em is relative to the font size of its parent element.
+*/
