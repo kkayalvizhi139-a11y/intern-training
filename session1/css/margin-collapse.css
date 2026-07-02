@@ -1,0 +1,33 @@
+/*
+Questions:
+
+1. What is the actual gap?
+Answer: 40px
+
+2. Why?
+Answer: Vertical margins collapse. The browser uses only the larger margin
+instead of adding both margins together.
+
+3. When does margin collapse NOT happen?
+Answer:
+- Between horizontal margins
+- When using Flexbox or Grid
+- When there is padding or border between elements
+- With absolutely positioned elements
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.first {
+    background-color: #ffe0e0;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.second {
+    background-color: #e0e0ff;
+    padding: 10px;
+    margin-top: 20px;
+}

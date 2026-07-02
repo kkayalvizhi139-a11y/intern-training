@@ -1,0 +1,72 @@
+/*
+box-shadow values:
+0px 4px 10px rgba(0, 0, 0, 0.2)
+
+0px  -> Horizontal offset
+4px  -> Vertical offset
+10px -> Blur radius
+rgba(0, 0, 0, 0.2) -> Black shadow with 20% opacity
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+}
+
+.card {
+    width: 320px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card header {
+    padding: 20px 20px 10px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.job-title {
+    color: gray;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.bio {
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #004d99;
+}

@@ -1,0 +1,88 @@
+/* 
+Why is the stylesheet linked in <head> and not at the bottom of <body>?
+
+The stylesheet is linked in the <head> so that the browser loads the CSS
+before rendering the page. This prevents the page from appearing unstyled
+for a moment and provides a better user experience.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Task A - Tag Selector */
+h2 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+/* Task B - Class Selector */
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Task C - ID Selector */
+#contact-section {
+    background-color: #e6f7ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*
+Observation:
+When both a tag selector and a class selector apply conflicting styles,
+the class selector wins because it has higher specificity.
+*/
+/* Task 2.3 - The Cascade */
+
+p {
+    color: black;
+}
+
+.intro-text {
+    color: blue;
+}
+
+#about-paragraph {
+    color: green;
+}
+
+/*
+Answers:
+
+1. The paragraph is green because the ID selector has the highest specificity.
+
+2. To make the p selector win, remove the class and ID from the paragraph
+   (or avoid using more specific selectors).
+
+3. Specificity (lowest → highest):
+   Tag Selector < Class Selector < ID Selector
+*/
+
+/* Navigation Styling */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin-right: 20px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
