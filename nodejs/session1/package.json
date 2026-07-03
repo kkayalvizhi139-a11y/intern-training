@@ -1,0 +1,21 @@
+{
+  "name": "session1",
+  "version": "1.0.0",
+  "description": "Node.js and npm Session 1 activity tasks",
+  "main": "compare.js",
+  "scripts": {
+  "start": "node dates.js",
+  "hello": "node hello.js",
+  "info": "node system-info.js",
+  "dev": "nodemon dates.js"
+},
+  "keywords": [],
+  "author": "Kayalvizhi K",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
