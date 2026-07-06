@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Jeya",
+    "role": "intern",
+    "score": 85
+  },
+  {
+    "id": 2,
+    "name": "Moni",
+    "role": "intern",
+    "score": 92
+  },
+  {
+    "id": 3,
+    "name": "Mano",
+    "role": "intern",
+    "score": 90
+  },
+  {
+    "id": 4,
+    "name": "Mafi",
+    "role": "intern",
+    "score": 95
+  },
+  {
+    "id": 5,
+    "name": "Vikram",
+    "role": "intern",
+    "score": 88
+  }
+]
