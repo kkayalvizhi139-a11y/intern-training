@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  background-color: #f9f9f9;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  background-color: #f9f9f9;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  color: #4f46e5;
+}
+
+.card-body {
+  margin-top: 10px;
+}
